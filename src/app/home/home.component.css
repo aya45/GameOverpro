@@ -1,0 +1,32 @@
+.recommendations h2{
+    color: #aaa
+}
+
+.info span
+{
+    color: #fff;
+    background-color: #4799eb;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.content{
+    background-color: #272b30;
+    color: #aaa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #32383e;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.6);
+    border-radius: 0.25rem;
+}
+
+.content:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.7s;
+    overflow: clip;
+}
+
+a{
+    text-decoration: none;
+    color: #aaa;
+}

@@ -1,0 +1,45 @@
+
+section
+{
+    background-position: center center;
+}
+
+header
+{
+    background-image: url(../../assets/img/paladins.b44d33d6e7ee1ba8.png);
+    background-size: cover;
+    background-position: center center;
+}
+.layer
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content
+{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #aaa
+}
+
+.content h3{
+    font-size: 20px;
+    color: #aaa
+}
+.o{
+  color: #49acff!important
+}
+
+.content button{
+    border: solid 1px #aaa;
+    color: #aaa;
+}
+.content:hover button{
+    background-color: #aaa ;
+    color: #fff;
+    transition-property: 1s;
+}

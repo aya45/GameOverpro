@@ -1,0 +1,32 @@
+nav
+{
+    background-color: #272b30;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: #272b30 solid 4px;
+}
+
+.navbar-brand span
+{
+    color: #fff;
+    font-style: italic;
+    font-weight: 100;
+}
+
+nav a
+{
+    color: #aaa;
+}
+
+.navbar-toggler i{
+    color: #aaa; 
+}
+.nav-item a
+{
+    color: #aaa; 
+    cursor: pointer;
+}
+.nav-item:hover a
+{
+    color: #aaa; 
+    cursor: pointer;
+}

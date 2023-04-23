@@ -1,0 +1,57 @@
+<ngx-spinner type="ball-scale-multiple" class="text-light load"> </ngx-spinner>
+
+<section>
+    <div class="layer ">
+
+<div class=" container py-5 details ">
+    <div class=" row ">
+
+        <div class=" col-md-4 py-5">
+            <img [src]="gameDetails?.thumbnail"  class="rounded w-100 ">
+            <div class="content d-flex justify-content-between">
+            <button class=" btn ">Free</button>
+            <button class="btn  w-75"> Play Now</button>
+        </div>
+        </div>
+        
+
+        <div class=" col-md-8 py-5 text-center">
+            <h2>{{gameDetails?.publisher}}</h2>
+         <h3 > About Overwatch : <br>{{gameDetails?.description}}</h3>
+        <hr>
+         <p>{{gameDetails?.overview}}</p>
+             <h2>Additional Information</h2>
+
+             <div class="row py-3 my-2 info text-xl-start">
+                <div class="col-md-4">
+                    <h6><span>Title </span> <br>{{gameDetails?.title}}</h6>
+                </div>
+                <div class="col-md-4">
+                    <h6><span>Developer </span> <br>{{gameDetails?.developer}}</h6>
+                </div>
+                <div class="col-md-4">
+                    <h6><span>Publisher </span> <br>{{gameDetails?.publisher}}</h6>
+                </div>
+                <div class="col-md-4">
+                    <h6><span>Release Date </span> <br>{{gameDetails?.release_date}}</h6>
+                </div>
+                <div class="col-md-4">
+                    <h6><span>Genere </span> <br>{{gameDetails?.genre}}</h6>
+                </div>
+                <div class="col-md-4">
+                    <h6><span>Platform </span> <br>{{gameDetails?.platform}}</h6>
+                </div>
+            </div>
+        </div>
+
+      
+         
+    </div>
+
+       
+
+    </div>
+   
+</div>
+
+</section>

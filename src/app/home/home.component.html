@@ -1,0 +1,27 @@
+<ngx-spinner type="ball-scale-multiple" class="text-light load"> </ngx-spinner>
+
+<app-homeheader></app-homeheader>
+
+<section class="py-3 my-3">
+   <div class="container">
+    <div class="recommendations px-2">
+        
+        <h2><i class="fas fa-robot mr-2" ></i> Personalized Recommendations</h2>
+    </div>
+    <div class="row">
+         <div class="col-xl-4 col-lg-4 col-md-6 py-3" *ngFor="let data of personalRecommendations?.splice(15,3)">
+           <a  [routerLink]="['/game-details',data.id]">
+            <div class="content my-3 ">
+               <img [src]="data.thumbnail" alt="{{data.title}}" class=" w-100 ">
+          <div class="info d-flex justify-content-sm-between align-items-sm-end  p-2 m-2">
+           <h4 class="pt-1">{{data.publisher}}</h4>
+             <span class="m-2 p-1 rounded">FREE</span>
+          </div>
+       </div>
+           </a>
+         
+         </div>
+    
+    </div>
+   </div>
+</section>

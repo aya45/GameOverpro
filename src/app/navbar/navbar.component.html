@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/img/logo (2).png" style="width: 70px; height: 47px;" alt=""><span>Game Over</span>
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars "></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+
+                <li class="nav-item">
+                    <a *ngIf="isLogin" class="nav-link" routerLink="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a *ngIf="isLogin" class="nav-link" routerLink="all">All</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a *ngIf="isLogin" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Platforms 
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/platforms/pc" >Pc</a></li>
+                      <li><a  *ngIf="isLogin" class="dropdown-item" routerLink="/platforms/browser" >browser</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a *ngIf="isLogin" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        sort-by
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/sort-by/release-date">release-date</a></li>
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/sort-by/popularity">popularity</a></li>
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/sort-by/alphabetical">alphabetical</a></li>
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/sort-by/relevance">relevance</a></li>
+
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a *ngIf="isLogin" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories 
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/categories/racing">racing</a></li>
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/categories/sports">sports</a></li>
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/categories/fantasy">fantasy</a></li>
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/categories/social">social</a></li>
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/categories/action">action</a></li>
+                      <li><a *ngIf="isLogin" class="dropdown-item" routerLink="/categories/zombie">zombie</a></li>
+                    </ul>
+                  </li>
+            
+
+            </ul>
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 d-flxe align-items-center justify-content-center">
+                
+
+                <li  class="nav-item">
+                    <a *ngIf="!isLogin" class="nav-link" routerLink="login">Login</a>
+                </li>
+                <li  class="nav-item">
+                    <a *ngIf="!isLogin" class="nav-link" routerLink="register">Join Free</a>
+                </li>
+                <li class="nav-item">
+                  <a *ngIf="isLogin" (click)="logOut()">Logout</a>
+                    <span   ></span>
+                </li>
+                
+            </ul>
+
+        </div>
+  </div>
+</nav>
+
